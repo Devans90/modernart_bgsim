@@ -1,0 +1,49 @@
+class Game:
+    Initialize game state
+    Set up players (including bot strategies)
+    Distribute initial artworks to players
+
+    While game is not over:
+        For each round:
+            Shuffle and deal artworks for the round
+            While round is not over:
+                For each player's turn:
+                    Choose action (play artwork for auction, pass, etc.)
+                    If auction occurs:
+                        Resolve auction (players place bids or pass)
+                        Update game state (track sales, update money, etc.)
+                    
+                    Update round and game state (check if round is over)
+            
+            Calculate round end scoring (update artist values, pay players)
+            Prepare for next round (if any)
+        
+        End of game scoring
+        Declare winner
+
+class Player:
+    Initialize player state (money, artworks)
+    Decide action for turn
+    Bid in auctions
+
+class Artwork:
+    Information about the artwork (artist, type, etc.)
+
+class Artist:
+    Track artist popularity and value
+
+class Auction:
+    Handle different types of auctions
+    Process bids
+    Determine winner of auction
+
+class Market:
+    Calculate artist values
+    Track sales history
+
+def main():
+    Create game instance
+    Set up players (bots with different strategies)
+    Start game loop
+
+main()
